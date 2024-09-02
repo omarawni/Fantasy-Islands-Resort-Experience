@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Ferry
+comment0.text=\n\ A\ ferry\ provides\ a\ one-way\ journey\ between\ two\ islands.\ It\n\ has\ a\ ferry\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ island\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=ferrycodee\ SourceIsland\ destinationisland
+comment1.target=Ferry(java.lang.String,\ Island,\ Island)
+comment2.params=
+comment2.target=java.lang.String\ getferrycode()
+comment3.params=obj
+comment3.target=boolean\ traveleligibility(Pass)
+comment4.params=obj
+comment4.target=java.lang.String\ requestingtravel(Pass)
+comment5.params=
+comment5.target=java.lang.String\ getPassengerlist()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

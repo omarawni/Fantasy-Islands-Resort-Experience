@@ -1,0 +1,33 @@
+#BlueJ class context
+comment0.target=FIRE
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ Returns\ information\ about\ the\ resort\ including\ its\ location/name\ and\ all\n\ passes\ currently\ on\ each\ island,\ or\ "No\ passes"\ (if\ no\ pass\ on\ that\ island\n\ @return\ all\ of\ the\ details\ of\ all\ islands\ including\ location\ \n\ and\ all\ passes\ currently\ on\ each\ island,\ or\ "No\ passes"\ if\ island\ has\ no\ passes\n
+comment10.params=id
+comment10.target=void\ convertPoints(int)
+comment10.text=\ Converts\ a\ pass's\ journey\ points\ into\ credits\n\ @param\ id\ the\ id\ of\ the\ pass\ whose\ points\ are\ to\ be\ converted\n
+comment2.params=
+comment2.target=java.lang.String\ getAllPassesOnAllIslands()
+comment2.text=Returns\ a\ String\ representation\ of\ all\ the\ passes\ on\ all\ islands\n\ with\ "No\ passes"\ if\ there\ are\ no\ passes\ on\ an\ island\n\ @return\ a\ String\ representation\ of\ all\ passes\ on\ all\ islands\n
+comment3.params=cd
+comment3.target=java.lang.String\ findPassLocation(int)
+comment3.text=Returns\ the\ name\ of\ the\ island\ which\ contains\ the\ specified\ pass\ or\ "Not\ found"\n\ @param\ cd\ -\ the\ id\ of\ the\ pass\n\ @return\ the\ name\ of\ the\ island\ which\ contains\ the\ pass,\ or\ "Not\ found"\n
+comment4.params=cd
+comment4.target=java.lang.String\ viewAPass(int)
+comment4.text=Returns\ details\ of\ the\ pass\ with\ the\ specified\ id\ or\ "Not\ found"\n\ @param\ cd\ -\ the\ id\ of\ the\ pass\n\ @return\ the\ details\ of\ the\ pass,\ or\ "Not\ found"\n
+comment5.params=isl
+comment5.target=int\ getIslandNumber(java.lang.String)
+comment5.text=\ Given\ the\ name\ of\ a\ island,\ returns\ the\ island\ id\ number\n\ or\ -1\ if\ island\ does\ not\ exist\n\ @param\ isl\ is\ the\ name\ of\ island\n\ @return\ id\ number\ of\ island\n
+comment6.params=isl
+comment6.target=java.lang.String\ getAllPassesOnIsland(java.lang.String)
+comment6.text=Returns\ a\ String\ representation\ of\ all\ the\ passes\ on\ a\ specified\ island\n\ @param\ isl\ -\ the\ name\ of\ the\ island\n\ @return\ a\ String\ representation\ of\ all\ passes\ on\ specified\ island\n
+comment7.params=cdId\ ferCode
+comment7.target=boolean\ canTravel(int,\ java.lang.String)
+comment7.text=Returns\ true\ if\ a\ Pass\ is\ allowed\ to\ journey\ using\ a\ ferry,\ false\ otherwise\n\ A\ journey\ can\ be\ made\ if\:\ \ \n\ the\ rating\ of\ the\ pass\ \ >\=\ the\ rating\ of\ the\ destination\ island\n\ AND\ the\ destination\ island\ is\ not\ full\n\ AND\ the\ pass\ has\ sufficient\ credits\ (a\ journey\ costs\ 3\ credits)\n\ AND\ the\ pass\ is\ currently\ in\ the\ source\ island\ \n\ AND\ the\ pass\ id\ and\ ferry\ code\ represent\ objects\ in\ the\ system\n\ @param\ cdId\ is\ the\ id\ of\ the\ pass\ requesting\ the\ move\n\ @param\ ferCode\ is\ the\ code\ of\ the\ ferry\ journey\ by\ which\ the\ pass\ wants\ to\ move\n\ @return\ true\ if\ the\ pass\ is\ allowed\ on\ the\ ferry\ journey,\ false\ otherwise\ \n
+comment8.params=pPassId\ ferCode
+comment8.target=java.lang.String\ travel(int,\ java.lang.String)
+comment8.text=Returns\ the\ result\ of\ a\ pass\ requesting\ to\ journey\ by\ Ferry.\n\ A\ journey\ will\ be\ successful\ if\:\ \ \n\ the\ luxury\ rating\ of\ the\ pass\ \ >\=\ the\ luxury\ rating\ of\ the\ destination\ island\n\ AND\ the\ destination\ island\ is\ not\ full\n\ AND\ the\ pass\ has\ sufficient\ credits\n\ AND\ the\ pass\ is\ currently\ in\ the\ source\ island\n\ AND\ both\ the\ pass\ id\ and\ the\ ferry\ code\ is\ on\ the\ system\n\ If\ the\ ferry\ journey\ can\ be\ made,\ the\ pass\ is\ removed\ from\ the\ source\ island,\n\ added\ to\ the\ destination\ island\ and\ a\ suitable\ message\ returned.\ Pass\ \n\ information\ should\ be\ updated\ (A\ journey\ costs\ 3\ credits\ and\ journey\ points\ incremented\ by\ 1)\n\ If\ the\ ferry\ journey\ cannot\ be\ made,\ the\ state\ of\ the\ system\ remains\ unchanged\n\ and\ a\ message\ specifying\ the\ reason\ is\ returned.\n\ @param\ pPassId\ is\ the\ id\ of\ the\ pass\ requesting\ the\ move\n\ @param\ ferCode\ is\ the\ code\ of\ the\ ferry\ by\ which\ the\ pass\ wants\ to\ travel\n\ @return\ a\ String\ giving\ the\ result\ of\ the\ request\ \n
+comment9.params=id\ creds
+comment9.target=void\ topUpCredits(int,\ int)
+comment9.text=\ Allows\ credits\ to\ be\ added\ to\ a\ pass.\n\ \ @param\ id\ the\ id\ of\ the\ pass\ toping\ up\ their\ credits\n\ \ @param\ creds\ the\ number\ of\ credits\ to\ be\ added\ to\ pass\ \n
+numComments=11
